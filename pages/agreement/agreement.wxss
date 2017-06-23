@@ -1,0 +1,17 @@
+/* agreement.wxss */
+.content {
+  padding: 20rpx;
+}
+
+.title {
+  font-weight: bold;
+  padding-bottom: 20rpx;
+  text-align: center;
+}
+.small-title {
+  font-weight: 600;
+}
+
+view {
+  padding-bottom: 20rpx;
+}

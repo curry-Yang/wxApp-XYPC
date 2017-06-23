@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/list/list",
+    "pages/commit/commit",
+    "pages/mine/mine",
+    "pages/mylist/mylist",
+    "pages/agreement/agreement"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#69b83b",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "校园拼车",
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "color": "#666",
+    "selectedColor": "#69b83b",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/list/list",
+        "text": "列表",
+        "iconPath": "./image/list.jpg",
+        "selectedIconPath": "./image/list1.jpg"
+      },
+      {
+        "pagePath": "pages/commit/commit",
+        "text": "发布",
+        "iconPath": "./image/commit.jpg",
+        "selectedIconPath": "./image/commit1.jpg"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "./image/mine.jpg",
+        "selectedIconPath": "./image/mine1.jpg"
+      }
+    ]
+  }
+}

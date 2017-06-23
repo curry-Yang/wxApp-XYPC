@@ -1,0 +1,83 @@
+/* list.wxss */
+.top {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 10rpx solid #eee;
+  padding: 20rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  background: #fff;
+  z-index: 2;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.mask {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.5;
+}
+
+.selectBox {
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  transition: transform 1s;
+  z-index: 1;
+}
+
+.selectBox view{
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 20rpx 0 20rpx 40rpx;
+  border-bottom: 5rpx solid #eee;
+}
+
+.top .all {
+  float: left;
+  padding: 0px;
+}
+
+.top .price {
+  float: right;
+  padding: 0px;
+}
+
+.content {
+  padding: 20rpx 40rpx 20rpx 40rpx;
+  border-bottom: 5px solid #eee;
+}
+
+text {
+  padding-right: 20rpx;
+}
+
+image{
+  width: 100rpx;
+  height: 100rpx;
+  display: inline-block;
+  vertical-align: -80%;
+  padding-right: 20rpx;
+}
+
+.tel {
+  float: right;
+}
+
+.none {
+  text-align: center;
+  padding: 20rpx 0 20rpx 0;
+}
+
+.empty {
+  text-align: center;
+  padding-top: 40rpx;
+  color: #666;
+}

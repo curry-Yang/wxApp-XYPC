@@ -1,0 +1,40 @@
+/* mylist.wxss */
+.content {
+  position: relative;
+  padding: 20rpx 40rpx 20rpx 40rpx;
+  border-bottom: 5px solid #eee;
+}
+
+image{
+  width: 100rpx;
+  height: 100rpx;
+  display: inline-block;
+  vertical-align: -80%;
+  padding-right: 20rpx;
+}
+
+text {
+  padding-right: 20rpx;
+}
+
+button {
+  position: absolute;
+  right: 60rpx;
+  top: 40rpx;
+  color: #fff;
+  font-size: 12px;
+  line-height: 60rpx;
+  display: inline-block;
+  width: 125rpx;
+  height: 60rpx;
+  background: #69b83b;
+  border-radius: 10%;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: #69b83b;
+}
+
+.none {
+  padding-top: 40rpx;
+  text-align: center;
+  color: #666;
+}

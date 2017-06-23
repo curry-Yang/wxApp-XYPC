@@ -1,0 +1,22 @@
+<!--mylist.wxml-->
+<view wx:if="{{array[0]}}">
+  <view class="content" wx:for="{{array}}">
+
+    <view class="classname">
+      <text>{{item._start_pos}}</text>
+      <image src="../../image/point.jpg"></image>
+      <text>{{item._end_pos}}</text>
+      <button id="{{index}}" disabled="{{disabled[index]}}" bindtap="complete" data-id="{{item._id}}">完成</button>
+    </view>
+
+    <view class="classname">
+      <text>出发时间：</text>
+      <text>{{item._date}}</text>
+      <text>{{item._time}}</text>
+      <text>{{item._num_of_people}}人</text>  
+    </view>
+  </view>
+</view>
+<view class="none" wx:else> 
+  <text>没有未完成的出行信息</text>
+</view>

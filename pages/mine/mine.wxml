@@ -1,0 +1,14 @@
+<!--mine.wxml-->
+<view wx:if="{{userInfo.avatarUrl}}" class="user">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+</view>
+<view wx:else class="user">
+  <image class="userinfo-avatar" src="../../image/name.jpg" background-size="cover"></image>
+</view>
+
+<view class="order" bindtap="search">
+  <image class="left" src="../../image/order.jpg"></image>
+  <text>查询出行</text>
+  <image class="right" src="../../image/right.jpg"></image>
+</view>

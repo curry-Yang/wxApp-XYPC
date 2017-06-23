@@ -1,0 +1,52 @@
+/* commit.wxss */
+.wrapper {
+  margin: 0 20rpx 0 20rpx;
+}
+
+image {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.section {
+  border-bottom: 2rpx solid #eee;
+  padding-top: 20rpx;
+}
+
+.section_gap {
+  padding-top: 40rpx;
+  border-bottom: none;
+}
+
+input {
+  padding-left: 20rpx;
+  display: inline-block;
+  vertical-align: 30%;
+}
+
+picker {
+  display: inline-block;
+  padding-right: 50rpx;
+  padding-left: 20rpx;
+  vertical-align: 50%;
+}
+
+
+
+.btn-area button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30%;
+  background-color: #69b83b;
+  margin-top: 100rpx;
+  color: #fff;
+}
+
+checkbox-group text {
+  color: #69b83b;
+}
+
+.agreement {
+  color: #69b83b;
+}

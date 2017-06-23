@@ -1,0 +1,40 @@
+<!--list.wxml-->
+<view class="top">
+  <text class="all" >全部</text>
+  <text class="price">费用均摊</text>
+</view>
+
+
+<view class="wrapper" wx:if="{{array[0]}}">
+  <view class="mask" bindtap="filter" style="display:{{display}}">
+  </view>
+  <view class="content" wx:for="{{array}}">
+    
+    <view class="classname">
+      <text>{{item._startPos}}</text>
+      <image src="../../image/point.jpg"></image>
+      <text>{{item._endPos}}</text>
+    </view>
+
+    <view class="classname">
+      <text>出发时间：</text>
+      <text>{{item._date}}</text>
+      <text>{{item._time}}</text>
+      <text>{{item._numOfPeople}}人</text>  
+    </view>
+
+    <view class="classname">
+      <image src="../../image/my.jpg"></image>
+      <text>{{item._name}}</text>
+      <image class="tel" bindtap="call" data-tel="{{item._phonenumber}}" src="../../image/tel.jpg"></image>
+    </view>
+
+  </view>
+</view>
+<view class="empty" wx:else>
+  <text>无出行信息</text>
+</view>
+
+<view class="none" wx:if="{{!flag}}">
+  <text>没有更多数据了</text>
+</view>

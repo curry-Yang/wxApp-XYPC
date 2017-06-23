@@ -1,0 +1,63 @@
+<!--commit.wxml-->
+<view class="wrapper">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+
+
+    <view class="section">
+      <image src="../../image/start.jpg"></image>
+      <input name="start" placeholder="如：农大南门" />
+    </view>
+    <view class="section">
+      <image src="../../image/end.jpg"></image>
+      <input name="end" placeholder="如：中央大街" />
+    </view>
+    <view class="section">
+      <image src="../../image/date.jpg"></image>
+      <picker name="date" mode="date" value="{{date}}"  bindchange="bindDateChange">
+        <view style="color:{{color}}" class="picker">
+          {{date}}
+        </view>
+      </picker>
+      <picker name="time" mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="bindTimeChange">
+        <view style="color:{{color}}" class="picker">
+          {{time}}
+        </view>
+      </picker>
+    </view>
+
+    <view class="section">
+      <image src="../../image/passenger.jpg"></image>
+      <picker name="num" bindchange="bindPickerChange" value="{{index+1}}" range="{{array}}">
+        <view style="color:{{color}}" class="picker">
+          {{array[index]}}
+        </view>
+      </picker>
+    </view>
+
+
+    <view class="section">
+      <image src="../../image/name.jpg"></image>
+      <input name="name" placeholder="您怎么称呼" />
+    </view>
+    <view class="section">
+      <image src="../../image/tel.jpg"></image>
+      <input name="tel" placeholder="联系电话" />
+    </view>
+
+
+
+    <view class="section section_gap">
+      <radio-group name="checkbox">
+        <radio value="check"/>已阅读并同意<text class="agreement" bindtap="read">《协议》</text>
+      </radio-group>
+    </view>
+
+    <view class="btn-area">
+      <button formType="submit">提交</button>
+    </view>
+
+
+
+  </form>
+</view>
+

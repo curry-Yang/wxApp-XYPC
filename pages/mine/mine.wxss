@@ -1,0 +1,44 @@
+/* mine.wxss */
+.user {
+  width: 100%;
+  height: 500rpx;
+  background-color: #69b83b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.userinfo-avatar {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+
+.order {
+  overflow: hidden;
+  height: 100rpx;
+  border-bottom: 1rpx solid #999;
+}
+
+.order .left {
+  float: left;
+}
+
+.order .right {
+  float: right;
+}
+
+.order text {
+  display: inline-block;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.order image {
+  width: 100rpx;
+  height: 100rpx;
+}
